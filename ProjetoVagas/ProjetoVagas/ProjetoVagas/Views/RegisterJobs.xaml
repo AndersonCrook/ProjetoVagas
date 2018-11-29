@@ -3,10 +3,31 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjetoVagas.Views.RegisterJobs">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        
+        <ScrollView>
+            
+            <StackLayout Margin="10" Spacing="15">
+                
+                <StackLayout Orientation="Horizontal" HeightRequest="50">
+
+                    <Label Text="Vagas"
+                    FontSize="35"
+                    FontAttributes="Bold"
+                    TextColor="#E38902"
+                    VerticalOptions="End" 
+                    HorizontalOptions="Start" 
+                    />
+
+                    <Label Text="encontre seu emprego aqui"
+                    TextColor="#E38902"
+                    FontSize="14"
+                    VerticalOptions="End" 
+                    HorizontalOptions="StartAndExpand" />
+
+                </StackLayout>
+
+            </StackLayout>
+            
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

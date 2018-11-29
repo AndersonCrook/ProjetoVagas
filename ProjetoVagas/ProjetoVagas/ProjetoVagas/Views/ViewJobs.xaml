@@ -1,12 +1,110 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ProjetoVagas.Views.ViewJobs">
+             x:Class="ProjetoVagas.Views.ViewJobs"
+             Title="Inicio">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+
+        <ScrollView>
+            <StackLayout Margin="10" Spacing="15">
+                <StackLayout Orientation="Horizontal" HeightRequest="50"  >
+                    
+                    <Label Text="Vagas"
+                    FontSize="35"
+                    FontAttributes="Bold"
+                    TextColor="#E38902"
+                    VerticalOptions="End" 
+                    HorizontalOptions="Start" 
+                    />
+
+                    <Label Text="encontre seu emprego aqui"
+                    TextColor="#E38902"
+                    FontSize="14"
+                    VerticalOptions="End" 
+                    HorizontalOptions="StartAndExpand" />
+
+                    <Button Text="Adicionar"
+                        TextColor="#ffffff"
+                        BackgroundColor="#FF9900"
+                        VerticalOptions="Center"
+                        HorizontalOptions="EndAndExpand"
+                        WidthRequest="140"
+                        HeightRequest="40"
+                        Clicked="CreateNewJob"/>
+
+                </StackLayout>
+                
+                <StackLayout Orientation="Vertical" >
+
+                    <StackLayout Orientation="Horizontal" HeightRequest="70" Spacing="0" BackgroundColor="#D1D1D1">
+                        
+                        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="10" Spacing="0">
+                            <Label Text="Desenvolvedor Mobile"
+                             FontSize="Large"
+                             FontAttributes="Bold"
+                             TextColor="#2E2E2E"/>
+
+                            <Label Text="Favarin Corp"
+                             FontSize="Medium"
+                             FontAttributes="Bold"
+                             TextColor="#464646"/>
+
+                            <Label Text="São Paulo/SP"
+                             FontSize="Micro"
+                             FontAttributes="Bold"
+                             TextColor="#5D5D5D"/>
+
+                        </StackLayout>
+
+                        <StackLayout  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="10">
+
+                            <Label Text="+ Detalhes"
+                             FontSize="Large"
+                             FontAttributes="Bold"
+                             VerticalOptions="CenterAndExpand"
+                             HorizontalOptions="End"
+                             TextColor="#FF9900"/>
+
+                        </StackLayout>
+                       
+                    </StackLayout>
+                    
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical" >
+
+                    <StackLayout Orientation="Horizontal" HeightRequest="70" Spacing="0" BackgroundColor="#D1D1D1">
+
+                        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="10" Spacing="0">
+                            <Label Text="Desenvolvedor Mobile"
+                             FontSize="Large"
+                             TextColor="#2E2E2E"/>
+
+                            <Label Text="Favarin Corp"
+                             FontSize="Medium"
+                             TextColor="#464646"/>
+
+                            <Label Text="São Paulo/SP"
+                             FontSize="Micro"
+                             TextColor="#5D5D5D"/>
+
+                        </StackLayout>
+
+                        <StackLayout  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="10">
+
+                            <Label Text="+ Detalhes"
+                             FontSize="Large"
+                             FontAttributes="Bold"
+                             VerticalOptions="CenterAndExpand"
+                             HorizontalOptions="End"
+                             TextColor="#FF9900"/>
+
+                        </StackLayout>
+
+                    </StackLayout>
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

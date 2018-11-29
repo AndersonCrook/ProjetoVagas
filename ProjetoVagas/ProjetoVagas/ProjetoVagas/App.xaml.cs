@@ -11,7 +11,7 @@ namespace ProjetoVagas
 		{
 			InitializeComponent();
 
-			MainPage = new NavigationPage( new Views.ViewJobs());
+			MainPage =  new Views.Home();
 		}
 
 		protected override void OnStart ()

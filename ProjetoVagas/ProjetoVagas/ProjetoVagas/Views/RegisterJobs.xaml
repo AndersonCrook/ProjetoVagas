@@ -26,6 +26,93 @@
 
                 </StackLayout>
 
+                <StackLayout Spacing="5">
+
+                    <Entry Placeholder="Nome da vaga"
+                           FontSize="Medium"
+                           PlaceholderColor="#2E2E2E"
+                           TextColor="#FF9900"/>
+
+                    <Entry Placeholder="Empresa"
+                           FontSize="Medium"
+                           PlaceholderColor="#2E2E2E"
+                           TextColor="#FF9900"/>
+
+                    <Entry Placeholder="Quantidade"
+                           Keyboard="Numeric"
+                           FontSize="Medium"
+                           PlaceholderColor="#2E2E2E"
+                           TextColor="#FF9900"/>
+
+                    <Entry Placeholder="Cidade"
+                           FontSize="Medium"
+                           PlaceholderColor="#2E2E2E"
+                           TextColor="#FF9900"/>
+
+                    <Entry Placeholder="Salário"
+                           Keyboard="Numeric"
+                           FontSize="Medium"
+                           PlaceholderColor="#2E2E2E"
+                           TextColor="#FF9900"/>
+
+                    <Label Text="Descrição"
+                           Margin="5"
+                           FontSize="Medium"
+                           TextColor="#2E2E2E"/>
+                    <Editor HeightRequest="150"
+                            TextColor="#FF9900"/>
+
+                    <StackLayout Orientation="Horizontal">
+                        
+                        <Label Text="Tipo de Contratação"
+                               Margin="5"
+                               FontSize="Medium"
+                               TextColor="#2E2E2E"/>
+                        
+                        <Label Text="CLT"
+                               Margin="5"
+                               FontSize="Medium"
+                               TextColor="#2E2E2E"/>
+                        
+                        <Switch/>
+                        
+                        <Label Text="PJ"
+                               Margin="5"
+                               FontSize="Medium"
+                               TextColor="#2E2E2E"/>
+                        
+                    </StackLayout>
+                    
+                    <Entry Placeholder="Telefone"
+                           Keyboard="Numeric"
+                           FontSize="Medium"
+                           PlaceholderColor="#2E2E2E"
+                           TextColor="#FF9900"/>
+
+                    <Entry Placeholder="Email"
+                           FontSize="Medium"
+                           PlaceholderColor="#2E2E2E"
+                           TextColor="#FF9900"/>
+
+                    <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" HorizontalOptions="EndAndExpand" Margin="10">
+
+                        <Button Text="Cancelar"
+                                TextColor="#ffffff"
+                                HorizontalOptions="Start"
+                                WidthRequest="140"
+                                HeightRequest="40"
+                                BackgroundColor="#B31313"
+                                Clicked="CloseModal"/>
+                        
+                        <Button Text="Salvar"
+                                TextColor="#ffffff"
+                                HorizontalOptions="End"
+                                WidthRequest="140"
+                                HeightRequest="40"
+                                BackgroundColor="#2EB313"/>
+                    </StackLayout>
+                </StackLayout>
+
             </StackLayout>
             
         </ScrollView>

@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -17,7 +12,7 @@ namespace ProjetoVagas.Views
 			InitializeComponent ();
 		}
 
-        public void CreateNewJob(Object sender, EventArgs args)
+        public void CreateNewJob(object sender, EventArgs args)
         {
             Navigation.PushModalAsync(new RegisterJobs());
             

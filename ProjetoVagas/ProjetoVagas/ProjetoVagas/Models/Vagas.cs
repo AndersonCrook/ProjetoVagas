@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using SQLite;
+﻿using SQLite;
 
 
 namespace ProjetoVagas.Models
 {
-    [Table("Vagas")]
+    [Table("Jobs")]
     public class Vagas
     {
         [PrimaryKey, AutoIncrement]

@@ -6,7 +6,9 @@
     <ContentPage.Content>
 
         <ScrollView>
+            
             <StackLayout Margin="10" Spacing="15">
+                
                 <StackLayout Orientation="Horizontal" HeightRequest="50"  >
                     
                     <Label Text="Vagas"
@@ -39,17 +41,18 @@
                     <StackLayout Orientation="Horizontal" HeightRequest="70" Spacing="0" BackgroundColor="#D1D1D1">
                         
                         <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="10" Spacing="0">
-                            <Label Text="Desenvolvedor Mobile"
+
+                            <Label Text="{Binding JobTitle}"
                              FontSize="Large"
                              FontAttributes="Bold"
                              TextColor="#2E2E2E"/>
 
-                            <Label Text="Favarin Corp"
+                            <Label Text="{Binding Companies}"
                              FontSize="Medium"
                              FontAttributes="Bold"
                              TextColor="#464646"/>
 
-                            <Label Text="São Paulo/SP"
+                            <Label Text="{Binding City}"
                              FontSize="Micro"
                              FontAttributes="Bold"
                              TextColor="#5D5D5D"/>
@@ -63,7 +66,11 @@
                              FontAttributes="Bold"
                              VerticalOptions="CenterAndExpand"
                              HorizontalOptions="End"
-                             TextColor="#FF9900"/>
+                             TextColor="#FF9900">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="MoreDetails" CommandParameter="{Binding .}"/>
+                                </Label.GestureRecognizers>
+                            </Label>
 
                         </StackLayout>
                        
@@ -71,40 +78,10 @@
                     
                 </StackLayout>
 
-                <StackLayout Orientation="Vertical" >
-
-                    <StackLayout Orientation="Horizontal" HeightRequest="70" Spacing="0" BackgroundColor="#D1D1D1">
-
-                        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="10" Spacing="0">
-                            <Label Text="Desenvolvedor Mobile"
-                             FontSize="Large"
-                             TextColor="#2E2E2E"/>
-
-                            <Label Text="Favarin Corp"
-                             FontSize="Medium"
-                             TextColor="#464646"/>
-
-                            <Label Text="São Paulo/SP"
-                             FontSize="Micro"
-                             TextColor="#5D5D5D"/>
-
-                        </StackLayout>
-
-                        <StackLayout  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="10">
-
-                            <Label Text="+ Detalhes"
-                             FontSize="Large"
-                             FontAttributes="Bold"
-                             VerticalOptions="CenterAndExpand"
-                             HorizontalOptions="End"
-                             TextColor="#FF9900"/>
-
-                        </StackLayout>
-
-                    </StackLayout>
-
-                </StackLayout>
             </StackLayout>
+            
         </ScrollView>
+        
     </ContentPage.Content>
+    
 </ContentPage>

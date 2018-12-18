@@ -9,6 +9,7 @@ namespace ProjetoVagas.Models
         [PrimaryKey, AutoIncrement]
         public int Id { get; set;}
         public string JobTitle { get; set; }
+        public string Companies { get; set; }
         public short Quantity { get; set; }
         public string City { get; set; }
         public double Salary { get; set; }

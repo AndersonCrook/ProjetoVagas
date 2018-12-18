@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetoVagas.Views.JobDetail">
+    <ContentPage.Content>
+        <ScrollView>
+
+            <StackLayout Margin="10" Spacing="15">
+
+                <StackLayout Orientation="Horizontal" HeightRequest="50">
+
+                    <Label Text="Vagas"
+                    FontSize="35"
+                    FontAttributes="Bold"
+                    TextColor="#E38902"
+                    VerticalOptions="End" 
+                    HorizontalOptions="Start" 
+                    />
+
+                    <Label Text="encontre seu emprego aqui"
+                    TextColor="#E38902"
+                    FontSize="14"
+                    VerticalOptions="End" 
+                    HorizontalOptions="StartAndExpand" />
+
+                </StackLayout>
+
+                <StackLayout Spacing="5">
+
+                    <Label Text="{Binding JobTitle}"
+                           FontSize="Medium"
+                           TextColor="#FF9900"/>
+
+                    <Label Text="{Binding Companies}"
+                           FontSize="Medium"
+                           TextColor="#FF9900"/>
+
+                    <Label Text="{Binding Quantity}"
+                           FontSize="Medium"
+                           TextColor="#FF9900"/>
+
+                    <Label Text="{Binding City}"
+                           FontSize="Medium"
+                           TextColor="#FF9900"/>
+
+                    <Label Text="{Binding Salary}"
+                           FontSize="Medium"
+                           TextColor="#FF9900"/>
+
+                    <Label Text="Descrição"
+                           Margin="5"
+                           FontSize="Medium"
+                           TextColor="#2E2E2E"/>
+                    <Label Text="{Binding Description}"
+                           FontSize="Medium"
+                           TextColor="#FF9900"/>
+
+                    <StackLayout Orientation="Horizontal">
+
+                        <Label Text="Tipo de Contratação"
+                               Margin="5"
+                               FontSize="Medium"
+                               TextColor="#2E2E2E"/>
+
+                        <Label Text="CLT"
+                               Margin="5"
+                               FontSize="Medium"
+                               TextColor="#2E2E2E"/>
+
+                        <Switch />
+
+                        <Label Text="PJ"
+                               Margin="5"
+                               FontSize="Medium"
+                               TextColor="#2E2E2E"/>
+
+                    </StackLayout>
+
+                    <Label Text="{Binding Telephone}"
+                           FontSize="Medium"
+                           TextColor="#FF9900"/>
+
+                    <Label Text="{Binding Email}"
+                           FontSize="Medium"
+                           TextColor="#FF9900"/>
+
+                    <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" HorizontalOptions="EndAndExpand" Margin="10">
+
+                        <Button Text="Voltar"
+                                TextColor="#ffffff"
+                                HorizontalOptions="Start"
+                                WidthRequest="140"
+                                HeightRequest="40"
+                                BackgroundColor="#B31313"
+                                Clicked="CloseModal"/>
+
+                    </StackLayout>
+                </StackLayout>
+
+            </StackLayout>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

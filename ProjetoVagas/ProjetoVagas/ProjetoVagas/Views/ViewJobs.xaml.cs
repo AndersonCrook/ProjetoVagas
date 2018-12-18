@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjetoVagas.Models;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -17,6 +18,12 @@ namespace ProjetoVagas.Views
             Navigation.PushModalAsync(new RegisterJobs());
             
         }
+        public void MoreDetails(object sender, EventArgs args)
+        {
+            Label lblDetail = (Label)sender;
+            Vagas job =((TapGestureRecognizer)lblDetail.GestureRecognizers[0]).CommandParameter as Vagas;
 
+            Navigation.PushModalAsync(new JobDetail(job));
+        }
     }
 }

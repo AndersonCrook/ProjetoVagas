@@ -7,9 +7,11 @@
         
         <ScrollView>
             
-            <StackLayout Margin="10" Spacing="15">
+            <StackLayout Margin="10" 
+                         Spacing="15">
                 
-                <StackLayout Orientation="Horizontal" HeightRequest="50"  >
+                <StackLayout Orientation="Horizontal" 
+                             HeightRequest="50"  >
 
                     <Label Text="Vagas"
                     FontSize="35"
@@ -29,9 +31,15 @@
 
                 <StackLayout Orientation="Vertical" >
 
-                    <StackLayout Orientation="Horizontal" HeightRequest="70" Spacing="0" BackgroundColor="#D1D1D1">
+                    <StackLayout Orientation="Horizontal" 
+                                 HeightRequest="70" 
+                                 Spacing="0" 
+                                 BackgroundColor="#D1D1D1">
 
-                        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="10" Spacing="0">
+                        <StackLayout VerticalOptions="FillAndExpand" 
+                                     HorizontalOptions="FillAndExpand" 
+                                     Margin="10" 
+                                     Spacing="0">
                             
                             <Label Text="{Binding JobTitle}"
                              FontSize="Large"
@@ -50,7 +58,10 @@
 
                         </StackLayout>
 
-                        <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="10">
+                        <StackLayout Orientation="Horizontal"
+                                     VerticalOptions="FillAndExpand" 
+                                     HorizontalOptions="FillAndExpand" 
+                                     Margin="10">
 
                             <Label Text="Editar"
                              FontSize="Large"

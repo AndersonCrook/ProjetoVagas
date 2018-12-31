@@ -25,6 +25,7 @@ namespace ProjetoVagas.Data
         {
             return db.Table<Vagas>().Where(a => a.Id == id).FirstOrDefault();        
         }
+
         public List<Vagas> GetByJobTitle(string Title)
         {
             return db.Table<Vagas>().Where(a => a.JobTitle.Contains(Title)).ToList();

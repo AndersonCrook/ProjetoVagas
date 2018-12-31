@@ -18,6 +18,7 @@ namespace ProjetoVagas.Views
             Navigation.PushModalAsync(new RegisterJobs());
             
         }
+
         public void MoreDetails(object sender, EventArgs args)
         {
             Label lblDetail = (Label)sender;

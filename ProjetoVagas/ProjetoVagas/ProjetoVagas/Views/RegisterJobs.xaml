@@ -6,9 +6,11 @@
         
         <ScrollView>
             
-            <StackLayout Margin="10" Spacing="15">
+            <StackLayout Margin="10" 
+                         Spacing="15">
                 
-                <StackLayout Orientation="Horizontal" HeightRequest="50">
+                <StackLayout Orientation="Horizontal" 
+                             HeightRequest="50">
 
                     <Label Text="Vagas"
                     FontSize="35"
@@ -94,7 +96,10 @@
                            PlaceholderColor="#2E2E2E"
                            TextColor="#FF9900"/>
 
-                    <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" HorizontalOptions="EndAndExpand" Margin="10">
+                    <StackLayout Orientation="Horizontal"
+                                 VerticalOptions="FillAndExpand"
+                                 HorizontalOptions="EndAndExpand"
+                                 Margin="10">
 
                         <Button Text="Cancelar"
                                 TextColor="#ffffff"

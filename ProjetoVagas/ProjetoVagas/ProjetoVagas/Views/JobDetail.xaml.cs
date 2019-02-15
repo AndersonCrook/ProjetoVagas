@@ -18,7 +18,6 @@ namespace ProjetoVagas.Views
         public void CloseModal(object sender, EventArgs args)
         {
             Navigation.PopModalAsync();
-
         }
     }
 }

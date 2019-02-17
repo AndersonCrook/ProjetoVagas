@@ -37,30 +37,32 @@
                         Clicked="CreateNewJob"/>
 
                 </StackLayout>
-                
-                <StackLayout Orientation="Vertical" >
+
+                <StackLayout Orientation="Vertical" x:Name="Listjobs">
 
                     <StackLayout Orientation="Horizontal" 
-                                 HeightRequest="70"
-                                 Spacing="0"
-                                 BackgroundColor="#D1D1D1">
-                        
-                        <StackLayout VerticalOptions="FillAndExpand"
-                                     HorizontalOptions="FillAndExpand" 
-                                     Margin="10" 
-                                     Spacing="0">
+                     HeightRequest="70"
+                     Spacing="0"
+                     Margin="10"
+                     BackgroundColor="#D1D1D1"
+                     >
 
-                            <Label Text="{Binding JobTitle}"
+                        <StackLayout VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand" 
+                         Margin="10" 
+                         Spacing="0">
+
+                            <Label Text="task1"
                              FontSize="Large"
                              FontAttributes="Bold"
                              TextColor="#2E2E2E"/>
 
-                            <Label Text="{Binding Companies}"
+                            <Label Text="task2"
                              FontSize="Medium"
                              FontAttributes="Bold"
                              TextColor="#464646"/>
 
-                            <Label Text="{Binding City}"
+                            <Label Text="task3"
                              FontSize="Micro"
                              FontAttributes="Bold"
                              TextColor="#5D5D5D"/>
@@ -68,27 +70,28 @@
                         </StackLayout>
 
                         <StackLayout  VerticalOptions="FillAndExpand"
-                                      HorizontalOptions="FillAndExpand"
-                                      Margin="10">
+                          HorizontalOptions="FillAndExpand"
+                          Margin="10">
 
-                            <Label Text="+ Detalhes"
+                            <Label Text="task4"
                              FontSize="Large"
                              FontAttributes="Bold"
                              VerticalOptions="CenterAndExpand"
                              HorizontalOptions="End"
                              TextColor="#FF9900">
+
                                 <Label.GestureRecognizers>
-                                    
-                                    <TapGestureRecognizer Tapped="MoreDetails" 
-                                                          CommandParameter="{Binding .}"/>
-                                    
+
+                                    <TapGestureRecognizer 
+                                          CommandParameter="{Binding .}"/>
+
                                 </Label.GestureRecognizers>
                             </Label>
 
                         </StackLayout>
-                       
+
                     </StackLayout>
-                    
+
                 </StackLayout>
 
             </StackLayout>

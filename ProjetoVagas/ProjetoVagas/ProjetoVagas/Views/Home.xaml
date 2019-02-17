@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:windows="clr-namespace:ProjetoVagas.Views"
              x:Class="ProjetoVagas.Views.Home"
-             Title="Vagas"
             BackgroundColor="#E8E8E8">
 
     

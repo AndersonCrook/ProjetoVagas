@@ -12,8 +12,8 @@ namespace ProjetoVagas.Views
 		public JobDetail (Vagas job)
 		{
 			InitializeComponent ();
-            DisplayAlert("Vaga", job.JobTitle,"OK");
-		}
+            BindingContext = job;
+        }
 
         public void CloseModal(object sender, EventArgs args)
         {

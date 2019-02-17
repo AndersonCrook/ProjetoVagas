@@ -33,36 +33,42 @@
                     <Entry Placeholder="Nome da vaga"
                            FontSize="Medium"
                            PlaceholderColor="#2E2E2E"
-                           TextColor="#FF9900"/>
+                           TextColor="#FF9900"
+                           x:Name="JobTitle"/>
 
                     <Entry Placeholder="Empresa"
                            FontSize="Medium"
                            PlaceholderColor="#2E2E2E"
-                           TextColor="#FF9900"/>
+                           TextColor="#FF9900"
+                           x:Name="Companies"/>
 
                     <Entry Placeholder="Quantidade"
                            Keyboard="Numeric"
                            FontSize="Medium"
                            PlaceholderColor="#2E2E2E"
-                           TextColor="#FF9900"/>
+                           TextColor="#FF9900"
+                           x:Name="Quantity"/>
 
                     <Entry Placeholder="Cidade"
                            FontSize="Medium"
                            PlaceholderColor="#2E2E2E"
-                           TextColor="#FF9900"/>
+                           TextColor="#FF9900"
+                           x:Name="City"/>
 
                     <Entry Placeholder="Salário"
                            Keyboard="Numeric"
                            FontSize="Medium"
                            PlaceholderColor="#2E2E2E"
-                           TextColor="#FF9900"/>
+                           TextColor="#FF9900"
+                           x:Name="Salary"/>
 
                     <Label Text="Descrição"
                            Margin="5"
                            FontSize="Medium"
                            TextColor="#2E2E2E"/>
                     <Editor HeightRequest="150"
-                            TextColor="#FF9900"/>
+                            TextColor="#FF9900"
+                            x:Name="Description"/>
 
                     <StackLayout Orientation="Horizontal">
                         
@@ -75,8 +81,8 @@
                                Margin="5"
                                FontSize="Medium"
                                TextColor="#2E2E2E"/>
-                        
-                        <Switch/>
+
+                        <Switch x:Name="TypeOfHiring"/>
                         
                         <Label Text="PJ"
                                Margin="5"
@@ -89,12 +95,14 @@
                            Keyboard="Numeric"
                            FontSize="Medium"
                            PlaceholderColor="#2E2E2E"
-                           TextColor="#FF9900"/>
+                           TextColor="#FF9900"
+                           x:Name="Telephone"/>
 
                     <Entry Placeholder="Email"
                            FontSize="Medium"
                            PlaceholderColor="#2E2E2E"
-                           TextColor="#FF9900"/>
+                           TextColor="#FF9900"
+                           x:Name="Email"/>
 
                     <StackLayout Orientation="Horizontal"
                                  VerticalOptions="FillAndExpand"
@@ -114,7 +122,8 @@
                                 HorizontalOptions="End"
                                 WidthRequest="140"
                                 HeightRequest="40"
-                                BackgroundColor="#2EB313"/>
+                                BackgroundColor="#2EB313"
+                                Clicked="SaveJob"/>
                     </StackLayout>
                 </StackLayout>
 

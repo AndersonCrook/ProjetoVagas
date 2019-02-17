@@ -49,34 +49,13 @@
                            FontSize="Medium"
                            TextColor="#FF9900"/>
 
-                    <Label Text="Descrição"
-                           Margin="5"
-                           FontSize="Medium"
-                           TextColor="#2E2E2E"/>
                     <Label Text="{Binding Description}"
                            FontSize="Medium"
                            TextColor="#FF9900"/>
 
-                    <StackLayout Orientation="Horizontal">
-
-                        <Label Text="Tipo de Contratação"
-                               Margin="5"
-                               FontSize="Medium"
-                               TextColor="#2E2E2E"/>
-
-                        <Label Text="CLT"
-                               Margin="5"
-                               FontSize="Medium"
-                               TextColor="#2E2E2E"/>
-
-                        <Switch />
-
-                        <Label Text="PJ"
-                               Margin="5"
-                               FontSize="Medium"
-                               TextColor="#2E2E2E"/>
-
-                    </StackLayout>
+                    <Label Text="{Binding TypeOfHiring}"
+                           FontSize="Medium"
+                           TextColor="#FF9900"/>
 
                     <Label Text="{Binding Telephone}"
                            FontSize="Medium"

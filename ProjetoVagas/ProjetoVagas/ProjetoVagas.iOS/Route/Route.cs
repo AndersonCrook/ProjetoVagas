@@ -18,7 +18,7 @@ namespace ProjetoVagas.iOS.Route
         {
             string FolderPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
             string LibraryPath = Path.Combine(FolderPath, "..", "Library");
-            string DataPath = Path.Combine(LibraryPath, dbName)
+            string DataPath = Path.Combine(LibraryPath, dbName);
 
             return LibraryPath;
         }

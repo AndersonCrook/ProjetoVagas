@@ -21,18 +21,6 @@ namespace ProjetoVagas.Views
             Navigation.PushModalAsync(new RegisterJobs());
         }
 
-        public void MoreDetails(Label LabelDetalhes)
-        {
-            
-          //  Vagas job =((TapGestureRecognizer)LabelDetalhes.GestureRecognizers[0]).CommandParameter as Vagas;
-           // Navigation.PushModalAsync(new JobDetail(job));
-
-            TapGestureRecognizer tapGest = (TapGestureRecognizer)LabelDetalhes.GestureRecognizers[0];
-            Vagas jobs = tapGest.CommandParameter as Vagas;
-
-            Navigation.PushModalAsync(new JobDetail(jobs));
-        }
-
         public void LoadJobs()
         {
             Listjobs.Children.Clear();

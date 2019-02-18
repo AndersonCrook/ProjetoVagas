@@ -29,7 +29,8 @@
                     
                 </StackLayout>
 
-                <StackLayout Orientation="Vertical" >
+                <StackLayout Orientation="Vertical"
+                             x:Name="ListOfRegisteredJobs">
 
                     <StackLayout Orientation="Horizontal" 
                                  HeightRequest="70" 

@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ProjetoVagas.Views.RegisterJobs">
+             x:Class="ProjetoVagas.Views.Edit">
     <ContentPage.Content>
-        
+
         <ScrollView>
-            
+
             <StackLayout Margin="10" 
                          Spacing="15">
-                
+
                 <StackLayout Orientation="Horizontal" 
                              HeightRequest="50">
 
@@ -77,12 +77,12 @@
                             Text="{Binding Description}"/>
 
                     <StackLayout Orientation="Horizontal">
-                        
+
                         <Label Text="Tipo de Contratação"
                                Margin="5"
                                FontSize="Medium"
                                TextColor="#2E2E2E"/>
-                        
+
                         <Label Text="CLT"
                                Margin="5"
                                FontSize="Medium"
@@ -90,14 +90,14 @@
 
                         <Switch x:Name="TypeOfHiring"
                                 IsToggled="{Binding TypeOfHiring}"/>
-                        
+
                         <Label Text="PJ"
                                Margin="5"
                                FontSize="Medium"
                                TextColor="#2E2E2E"/>
-                        
+
                     </StackLayout>
-                    
+
                     <Entry Placeholder="Telefone"
                            Keyboard="Numeric"
                            FontSize="Medium"
@@ -125,7 +125,7 @@
                                 HeightRequest="40"
                                 BackgroundColor="#B31313"
                                 Clicked="CloseModal"/>
-                        
+
                         <Button Text="Salvar"
                                 TextColor="#ffffff"
                                 HorizontalOptions="End"
@@ -137,7 +137,7 @@
                 </StackLayout>
 
             </StackLayout>
-            
+
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>

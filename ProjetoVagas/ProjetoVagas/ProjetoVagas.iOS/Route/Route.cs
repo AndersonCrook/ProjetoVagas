@@ -8,19 +8,24 @@ using ProjetoVagas.Data;
 using Xamarin.Forms;
 using ProjetoVagas.iOS.Route;
 using System.IO;
+using SQLite;
 
 [assembly: Dependency(typeof(Route))]
 namespace ProjetoVagas.iOS.Route
 {
     class Route : ISQLite
     {
-        public string GetConection(string dbName)
+        public Route()
         {
-            string FolderPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
-            string LibraryPath = Path.Combine(FolderPath, "..", "Library");
-            string DataPath = Path.Combine(LibraryPath, dbName);
 
-            return LibraryPath;
+        }
+
+        public SQLiteConnection GetConnection(string dbName)
+        {
+            var folder = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            var path = Path.Combine(folder, "..", "Library", dbName);
+            return new SQLiteConnection(path);
+
         }
     }
 }

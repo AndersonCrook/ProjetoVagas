@@ -1,8 +1,10 @@
 ﻿
+using SQLite;
+
 namespace ProjetoVagas.Data
 {
     public interface ISQLite
     {
-        string GetConection(string dbName);
+        SQLiteConnection GetConnection(string dbName);
     }
 }

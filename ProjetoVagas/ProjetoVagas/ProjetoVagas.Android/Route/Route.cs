@@ -1,30 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
-using Xamarin.Forms;
 using ProjetoVagas.Data;
-using System.IO;
 using ProjetoVagas.Droid.Route;
+using Xamarin.Forms;
+using SQLite;
+using System.IO;
 
 [assembly:Dependency(typeof(Route))]
 namespace ProjetoVagas.Droid.Route
 {
     class Route : ISQLite
     {
-        public string GetConection(string dbName)
-        {
-            string FolderPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
-            string DataPath = Path.Combine(FolderPath, dbName);
 
-            return DataPath;
+        public SQLiteConnection GetConnection(string dbName)
+        {
+            var documents = System.Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            var path = Path.Combine(documents, dbName);
+            return new SQLiteConnection(path);
         }
     }
 }

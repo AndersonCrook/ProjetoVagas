@@ -12,11 +12,8 @@ namespace ProjetoVagas.Data
 
         public BaseData()
         {
-            var dep = DependencyService.Get<ISQLite>();
-            string route = dep.GetConection(dbName);
-
-            _conexao = new SQLiteConnection(route);
-            _conexao.CreateTable<Vagas>();
+            this._conexao = DependencyService.Get<ISQLite>().GetConnection(this.dbName);
+            this._conexao.CreateTable<Vagas>();
         }
 
         public  void Save(Vagas vaga)

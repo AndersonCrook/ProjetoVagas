@@ -24,4 +24,6 @@ Para rodar a versão para IOS
 
 SQLite é uma biblioteca de código aberto (open source) desenvolvido na linguagem C que permite a disponibilização de um pequeno banco de dados na própria aplicação.
 
+https://www.sqlite.org/index.html
+
 Certifique-se de mantê la atualizada.

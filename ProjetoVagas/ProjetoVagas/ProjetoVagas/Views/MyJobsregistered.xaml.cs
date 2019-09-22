@@ -36,13 +36,13 @@ namespace ProjetoVagas.Views
         {
             object dado = null;
             dado = new StackLayout() { VerticalOptions = LayoutOptions.FillAndExpand, HorizontalOptions = LayoutOptions.FillAndExpand, Margin = 10, Spacing = 0 };
-            ((StackLayout)dado).Children.Add(new Label() { Text = jobs.JobTitle, FontSize = 20, FontAttributes = FontAttributes.Bold, TextColor = Color.FromHex("#2E2E2E") });
-            ((StackLayout)dado).Children.Add(new Label() { Text = jobs.Companies, FontSize = 15, FontAttributes = FontAttributes.Bold, TextColor = Color.FromHex("#464646") });
-            ((StackLayout)dado).Children.Add(new Label() { Text = jobs.City, FontSize = 12, FontAttributes = FontAttributes.Bold, TextColor = Color.FromHex("#5D5D5D") });
+            ((StackLayout)dado).Children.Add(new Label() { Text = jobs.JobTitle, FontSize = 15, FontAttributes = FontAttributes.Bold, TextColor = Color.FromHex("#2E2E2E") });
+            ((StackLayout)dado).Children.Add(new Label() { Text = jobs.Companies, FontSize = 10, FontAttributes = FontAttributes.Bold, TextColor = Color.FromHex("#464646") });
+            ((StackLayout)dado).Children.Add(new Label() { Text = jobs.City, FontSize = 8, FontAttributes = FontAttributes.Bold, TextColor = Color.FromHex("#5D5D5D") });
             
-            Label editar = new Label() { Text = "Editar", FontSize = 20, FontAttributes = FontAttributes.Bold, VerticalOptions = LayoutOptions.CenterAndExpand, HorizontalOptions = LayoutOptions.End, TextColor = Color.FromHex("#FF9900") };
-            Label serapador = new Label() { Text = " / ", FontSize = 20, FontAttributes = FontAttributes.Bold, VerticalOptions = LayoutOptions.CenterAndExpand, HorizontalOptions = LayoutOptions.End, TextColor = Color.FromHex("#FF9900") };
-            Label excluir = new Label() { Text = "Excluir", FontSize = 20, FontAttributes = FontAttributes.Bold, VerticalOptions = LayoutOptions.CenterAndExpand, HorizontalOptions = LayoutOptions.End, TextColor = Color.FromHex("#FF9900") };
+            Label editar = new Label() { Text = "Editar", FontSize = 15, FontAttributes = FontAttributes.Bold, VerticalOptions = LayoutOptions.CenterAndExpand, HorizontalOptions = LayoutOptions.End, TextColor = Color.FromHex("#FF9900") };
+            Label serapador = new Label() { Text = " / ", FontSize = 15, FontAttributes = FontAttributes.Bold, VerticalOptions = LayoutOptions.CenterAndExpand, HorizontalOptions = LayoutOptions.End, TextColor = Color.FromHex("#FF9900") };
+            Label excluir = new Label() { Text = "Excluir", FontSize = 15, FontAttributes = FontAttributes.Bold, VerticalOptions = LayoutOptions.CenterAndExpand, HorizontalOptions = LayoutOptions.End, TextColor = Color.FromHex("#FF9900") };
 
             TapGestureRecognizer CheckTapEditar = new TapGestureRecognizer();
             CheckTapEditar.Tapped += delegate

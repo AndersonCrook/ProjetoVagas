@@ -40,12 +40,12 @@ namespace ProjetoVagas.Views
         {
             object dado = null;
             dado = new StackLayout() { VerticalOptions = LayoutOptions.FillAndExpand, HorizontalOptions = LayoutOptions.FillAndExpand, Margin = 10, Spacing = 0 };
-            ((StackLayout)dado).Children.Add(new Label() { Text = jobs.JobTitle, FontSize = 20, FontAttributes = FontAttributes.Bold, TextColor = Color.FromHex("#2E2E2E")});
-            ((StackLayout)dado).Children.Add(new Label() { Text = jobs.Companies, FontSize = 15, FontAttributes = FontAttributes.Bold, TextColor = Color.FromHex("#464646") });
-            ((StackLayout)dado).Children.Add(new Label() { Text = jobs.City, FontSize = 12, FontAttributes = FontAttributes.Bold, TextColor = Color.FromHex("#5D5D5D") });
+            ((StackLayout)dado).Children.Add(new Label() { Text = jobs.JobTitle, FontSize = 15, FontAttributes = FontAttributes.Bold, TextColor = Color.FromHex("#2E2E2E")});
+            ((StackLayout)dado).Children.Add(new Label() { Text = jobs.Companies, FontSize = 10, FontAttributes = FontAttributes.Bold, TextColor = Color.FromHex("#464646") });
+            ((StackLayout)dado).Children.Add(new Label() { Text = jobs.City, FontSize = 8, FontAttributes = FontAttributes.Bold, TextColor = Color.FromHex("#5D5D5D") });
 
             Label Detalhes = null;
-            Detalhes = new Label() { Text = "+ Detalhes", FontSize = 20, FontAttributes = FontAttributes.Bold, VerticalOptions = LayoutOptions.Center, HorizontalOptions = LayoutOptions.End, TextColor = Color.FromHex("#FF9900") };
+            Detalhes = new Label() { Text = "+ Detalhes", FontSize = 15, FontAttributes = FontAttributes.Bold, VerticalOptions = LayoutOptions.Center, HorizontalOptions = LayoutOptions.End, TextColor = Color.FromHex("#FF9900") };
 
             TapGestureRecognizer CheckTap = new TapGestureRecognizer();
             CheckTap.Tapped += delegate

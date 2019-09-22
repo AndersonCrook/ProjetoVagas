@@ -14,7 +14,7 @@
                              HeightRequest="50"  >
                     
                     <Label Text="Vagas"
-                    FontSize="35"
+                    FontSize="Medium"
                     FontAttributes="Bold"
                     TextColor="#E38902"
                     VerticalOptions="End" 
@@ -23,7 +23,7 @@
 
                     <Label Text="encontre seu emprego aqui"
                     TextColor="#E38902"
-                    FontSize="14"
+                    FontSize="Micro"
                     VerticalOptions="End" 
                     HorizontalOptions="StartAndExpand" />
 
@@ -44,7 +44,7 @@
                     <StackLayout Orientation="Horizontal" 
                      HeightRequest="70"
                      Spacing="0"
-                     Margin="10"
+                     Margin="5"
                      BackgroundColor="#D1D1D1"
                      >
 
@@ -54,17 +54,17 @@
                          Spacing="0">
 
                             <Label Text="task1"
-                             FontSize="Large"
+                             FontSize="Medium"
                              FontAttributes="Bold"
                              TextColor="#2E2E2E"/>
 
                             <Label Text="task2"
-                             FontSize="Medium"
+                             FontSize="Micro"
                              FontAttributes="Bold"
                              TextColor="#464646"/>
 
                             <Label Text="task3"
-                             FontSize="Micro"
+                             FontSize="Small"
                              FontAttributes="Bold"
                              TextColor="#5D5D5D"/>
 
@@ -75,7 +75,7 @@
                           Margin="10">
 
                             <Label Text="task4"
-                             FontSize="Large"
+                             FontSize="Medium"
                              FontAttributes="Bold"
                              VerticalOptions="CenterAndExpand"
                              HorizontalOptions="End"

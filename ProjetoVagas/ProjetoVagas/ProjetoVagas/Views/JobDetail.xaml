@@ -12,7 +12,7 @@
                              HeightRequest="50">
 
                     <Label Text="Vagas"
-                    FontSize="35"
+                    FontSize="Medium"
                     FontAttributes="Bold"
                     TextColor="#E38902"
                     VerticalOptions="End" 
@@ -21,7 +21,7 @@
 
                     <Label Text="encontre seu emprego aqui"
                     TextColor="#E38902"
-                    FontSize="14"
+                    FontSize="Micro"
                     VerticalOptions="End" 
                     HorizontalOptions="StartAndExpand" />
 
